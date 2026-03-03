@@ -5,12 +5,12 @@
 
 ## Project Overview
 
-Machine learning pipeline for credit card fraud detection using 1.85M+ transactions.
+Machine learning for credit card fraud and anomaly detection. Includes data extraction using SQL alongside predictive modeling using Python. Developed as part of my Master's in Applied Statistics at the University of Michigan.
 
 **Key Results:**
-- Logistic Regression: 75.70% fraud detection rate
-- Random Forest: 98% precision, 71.71% recall
-- Isolation Forest: 1.19% recall (shows unsupervised limitations)
+- Logistic Regression: 75.70% recall (fraud detection rate), 2% precision
+- Random Forest: 71.71% recall, 98% precision
+- Isolation Forest: 1.19% recall , 1% precision (shows unsupervised limitations)
 
 ## Files
 
@@ -21,15 +21,6 @@ Machine learning pipeline for credit card fraud detection using 1.85M+ transacti
 ## Data Setup
 
 **Dataset:** [Credit Card Transactions](https://huggingface.co/datasets/pointe77/credit-card-transaction)
-
-### Download Data:
-1. Go to: https://huggingface.co/datasets/pointe77/credit-card-transaction
-2. Download both CSV files:
-   - `credit_card_transaction_train.csv` as 'credit_card_transaction_data.csv'
-   - `credit_card_transaction_test.csv` as 'credit_card_transaction_data_new.csv'
-3. Place them in a `data/` folder
-
-**Note:** CSV files not included in GitHub due to size (~500MB total)
 
 ## Running the Project
 ```bash
